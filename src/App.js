@@ -1,8 +1,9 @@
 import React from 'react';
+import AppRouter from './routes';
 
 function App() {
   return (
-  <h1>Hello</h1>
+  <AppRouter />
   );
 }
 
