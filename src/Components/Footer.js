@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
 
-import { Book, InstagramLogo, Link, WhatsappLogo } from 'phosphor-react';
+import { FaInstagram, FaWhatsapp, FaBook, FaExternalLinkAlt  } from 'react-icons/fa';
 
 const Section = styled.section`
  margin-top: 4rem;
@@ -70,6 +70,7 @@ const MenuItems = styled.ul`
 const Item = styled.li`
  width: fit-content;
  cursor: pointer;
+ font-family: "Poppins", sans-serif;
  &::after {
     content: ' ';
     display: block;
@@ -91,6 +92,7 @@ const Bottom = styled.div`
  align-items: center;
  a{
      text-decoration: underline;
+     color: inherit;
  }
  @media (max-width: 48em) {
    flex-direction: column;
@@ -102,50 +104,40 @@ const Bottom = styled.div`
 `
 
 const Footer = () => {
-
-  const scrollTo = (id) => {
-    let element = document.getElementById(id);
-
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest'
-    })
-  }
     return (
     <Section>
      <Container>
       <Left>
        <Logo />
        <IconList>
-        <a href='https://www.instagram.com/eusoujorgeandrade/' target='_blank'
-        rel='nooperner'
+        <a href='https://www.instagram.com/eusoujorgeandrade/' target="_blank"
+        rel="noreferrer"
         >
-        <InstagramLogo size={32} />
+        <FaInstagram />
         </a>
-        <a href="https://contate.me/jorgeandrade" target='_blank'
-        rel='nooperner'
+        <a href="https://contate.me/jorgeandrade" target="_blank"
+        rel="noreferrer"
         >
-        <WhatsappLogo size={32} />
+        <FaWhatsapp />
         </a>
-        <a href='https://jorge-augusto-nascimento-de-andrade-de08.herospark.co/p/comunidade-lendo-e-aplicando' target='_blank'
-        rel='nooperner'
+        <a href='https://jorge-augusto-nascimento-de-andrade-de08.herospark.co/p/comunidade-lendo-e-aplicando' target="_blank"
+        rel="noreferrer"
         >
-        <Book size={32} />
+        <FaBook />
         </a>
-        <a href='https://linktr.ee/eusoujorgeandrade' target='_blank'
-        rel='nooperner'
+        <a href='https://linktr.ee/eusoujorgeandrade' target="_blank"
+        rel="noreferrer"
         >
-        <Link size={32} />
+        <FaExternalLinkAlt />
         </a>
        </IconList>
       </Left>
       <MenuItems>
-       <Item onClick={() => scrollTo('home')}>Home</Item>
-       <Item onClick={() => scrollTo('sobre')}>Sobre</Item>
-       <Item onClick={() => scrollTo('projetos')}>Projetos</Item>
+       <Item>Home</Item>
+       <Item>Sobre</Item>
+       <Item>Projetos</Item>
 
-       <Item onClick={() => scrollTo('comunidade')}>Comunidade</Item>
+       <Item>Comunidade</Item>
       </MenuItems>   
      </Container>
       <Bottom>

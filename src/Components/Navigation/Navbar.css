@@ -1,5 +1,15 @@
 li {
  list-style: none;
+ font-family: "Poppins", sans-serif;
+}
+
+li::after {
+  content: ' ';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
 }
 
 .section-navbar {

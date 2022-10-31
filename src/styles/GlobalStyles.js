@@ -27,6 +27,11 @@ const GlobalStyles = createGlobalStyle`
   font-family: "Poppins", sans-serif;
   background-color: var(--background);
  }
+
+ a {
+  text-decoration: none;
+  color: black;
+}
 `;
 
 export default GlobalStyles;
