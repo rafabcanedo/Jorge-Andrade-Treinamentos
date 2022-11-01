@@ -1,0 +1,31 @@
+.projetos-home {
+ grid-gap: 35px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ column-gap: 1.875rem;
+}
+
+.projetos-home-card {
+ text-align: center;
+ padding: 1.875rem;
+ border-radius: 30px;
+ background: linear-gradient(145deg, #e2e8ec, #fdfdfd);
+ transition: all 0.3s ease-in-out;
+}
+
+.projetos-home-card:hover {
+ transform: translateY(-10px);
+}
+
+.produtos-home-img {
+ margin-bottom: 1.25rem;
+}
+
+.produtos-home-title {
+ font-size: 20px;
+ margin-bottom: 1rem;
+}
+
+.produtos-home-description {
+ color: black;
+}

@@ -7,6 +7,7 @@ import Carrosel from '../../Components/Carrosel';
 // icons
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import ProjetosHome from '../../Components/ProjetosHome/ProjetosHome';
 
   const Home = () => {
     return (
@@ -62,6 +63,10 @@ import { FaWhatsapp } from "react-icons/fa";
           </section>
         <div className='container-carrosel'>
           <Carrosel />
+        </div>
+
+        <div>
+        <ProjetosHome />
         </div>
       </>
     )

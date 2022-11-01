@@ -11,6 +11,7 @@
 .left-top {
  width: 50%;
  margin-top: 80px;
+ max-width: 95%;
 }
 
 .h3-home {

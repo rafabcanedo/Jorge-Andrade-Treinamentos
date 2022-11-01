@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
   --yellow: #eaf205;
 
   --cinza-clean: #3c3e41;
+  --cinza-ctn: #fafafa;
  }
 
  * {

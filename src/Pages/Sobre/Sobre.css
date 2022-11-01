@@ -1,0 +1,105 @@
+.container-sobre {
+ display: grid;
+ grid-template-columns: 35% 50%;
+ gap: 15%;
+}
+
+.sobre-ctnmim {
+ width: 100%;
+ aspect-ratio: 1/1;
+ border-radius: 2rem;
+ background: linear-gradient(45deg, transparent, #e2e8ec, transparent);
+ display: grid;
+ place-items: center;
+}
+
+.sobremim-image {
+ border-radius: 2rem;
+ overflow: hidden;
+}
+
+.content-sobre {
+ padding-top: 10rem;
+}
+
+.sobre-cards {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 1.5rem;
+}
+
+.sobre-card {
+ background: var(--green-dark);
+ border: 1px solid transparent;
+ border-radius: 1rem;
+ padding: 2rem;
+ text-align: center;
+}
+
+.sobre-card h5 {
+ font-size: 0.95rem;
+}
+
+.sobre-card p {
+ font-size: 0.7rem;
+ color: #878e99;
+}
+
+.sobre-icon {
+ color: var(--green-light);
+}
+
+.text-sobremain {
+ margin: 2rem 0 2.6rem;
+ color: #878e99;
+}
+
+.btn-proj-sobre {
+    padding: 15px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--green-light);
+    transition: 0.5s;
+}
+
+.btn-proj-sobre {
+    background: linear-gradient(145deg, #010326, #010326);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #fdfdfd;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+ .container-sobre {
+  grid-template-columns: 1fr;
+  gap: 0;
+ }
+
+ .sobre-ctnmim {
+  width: 50%;
+  margin: 2rem auto 4rem;
+ }
+
+ .text-sobremain {
+    margin: 1rem 0 1.5rem;
+ }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre-ctnmim {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .sobre-cards {
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+    }
+
+    .content-sobre {
+     text-align: center;
+    }
+
+    .text-sobremain {
+     margin: 1.5rem 0;
+    }
+}
